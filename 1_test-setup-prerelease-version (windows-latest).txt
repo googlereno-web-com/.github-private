@@ -1,0 +1,562 @@
+﻿2024-04-04T17:29:43.6717282Z Current runner version: '2.314.1'
+2024-04-04T17:29:43.6739477Z ##[group]Operating System
+2024-04-04T17:29:43.6740103Z Microsoft Windows Server 2022
+2024-04-04T17:29:43.6740505Z 10.0.20348
+2024-04-04T17:29:43.6740815Z Datacenter
+2024-04-04T17:29:43.6741079Z ##[endgroup]
+2024-04-04T17:29:43.6741397Z ##[group]Runner Image
+2024-04-04T17:29:43.6741767Z Image: windows-2022
+2024-04-04T17:29:43.6742104Z Version: 20240322.1.0
+2024-04-04T17:29:43.6742951Z Included Software: https://github.com/actions/runner-images/blob/win22/20240322.1/images/windows/Windows2022-Readme.md
+2024-04-04T17:29:43.6744231Z Image Release: https://github.com/actions/runner-images/releases/tag/win22%2F20240322.1
+2024-04-04T17:29:43.6744973Z ##[endgroup]
+2024-04-04T17:29:43.6745284Z ##[group]Runner Image Provisioner
+2024-04-04T17:29:43.6745703Z 2.0.361.1
+2024-04-04T17:29:43.6745985Z ##[endgroup]
+2024-04-04T17:29:43.6747821Z ##[group]GITHUB_TOKEN Permissions
+2024-04-04T17:29:43.6749301Z Actions: read
+2024-04-04T17:29:43.6749786Z Checks: read
+2024-04-04T17:29:43.6750205Z Contents: read
+2024-04-04T17:29:43.6750511Z Deployments: read
+2024-04-04T17:29:43.6750850Z Discussions: read
+2024-04-04T17:29:43.6751166Z Issues: read
+2024-04-04T17:29:43.6751442Z Metadata: read
+2024-04-04T17:29:43.6751766Z Packages: read
+2024-04-04T17:29:43.6752071Z Pages: read
+2024-04-04T17:29:43.6752348Z PullRequests: read
+2024-04-04T17:29:43.6752707Z RepositoryProjects: read
+2024-04-04T17:29:43.6753087Z SecurityEvents: read
+2024-04-04T17:29:43.6753400Z Statuses: read
+2024-04-04T17:29:43.6753743Z ##[endgroup]
+2024-04-04T17:29:43.6756488Z Secret source: Dependabot
+2024-04-04T17:29:43.6757006Z Prepare workflow directory
+2024-04-04T17:29:43.7452747Z Prepare all required actions
+2024-04-04T17:29:43.7611973Z Getting action download info
+2024-04-04T17:29:43.8995430Z Download action repository 'actions/checkout@v3' (SHA:f43a0e5ff2bd294095638e18286ca9a3d1956744)
+2024-04-04T17:29:44.3181751Z Complete job name: test-setup-prerelease-version (windows-latest)
+2024-04-04T17:29:44.4469259Z ##[group]Run actions/checkout@v3
+2024-04-04T17:29:44.4469739Z with:
+2024-04-04T17:29:44.4470005Z   repository: actions/setup-dotnet
+2024-04-04T17:29:44.4470570Z   token: ***
+2024-04-04T17:29:44.4470847Z   ssh-strict: true
+2024-04-04T17:29:44.4471137Z   persist-credentials: true
+2024-04-04T17:29:44.4471478Z   clean: true
+2024-04-04T17:29:44.4471754Z   sparse-checkout-cone-mode: true
+2024-04-04T17:29:44.4472109Z   fetch-depth: 1
+2024-04-04T17:29:44.4472369Z   fetch-tags: false
+2024-04-04T17:29:44.4472630Z   lfs: false
+2024-04-04T17:29:44.4472860Z   submodules: false
+2024-04-04T17:29:44.4473141Z   set-safe-directory: true
+2024-04-04T17:29:44.4473455Z ##[endgroup]
+2024-04-04T17:29:45.0533697Z Syncing repository: actions/setup-dotnet
+2024-04-04T17:29:45.0616150Z ##[group]Getting Git version info
+2024-04-04T17:29:45.0616919Z Working directory is 'D:\a\setup-dotnet\setup-dotnet'
+2024-04-04T17:29:45.8680001Z [command]"C:\Program Files\Git\bin\git.exe" version
+2024-04-04T17:29:45.9999109Z git version 2.44.0.windows.1
+2024-04-04T17:29:46.0043590Z ##[endgroup]
+2024-04-04T17:29:46.0233480Z Temporarily overriding HOME='D:\a\_temp\493cfbc2-4a73-4410-9fbb-e119181ffe02' before making global git config changes
+2024-04-04T17:29:46.0235284Z Adding repository directory to the temporary git global config as a safe directory
+2024-04-04T17:29:46.0244653Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\setup-dotnet\setup-dotnet
+2024-04-04T17:29:46.0942333Z Deleting the contents of 'D:\a\setup-dotnet\setup-dotnet'
+2024-04-04T17:29:46.0948164Z ##[group]Initializing the repository
+2024-04-04T17:29:46.0956473Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\setup-dotnet\setup-dotnet
+2024-04-04T17:29:46.1736337Z Initialized empty Git repository in D:/a/setup-dotnet/setup-dotnet/.git/
+2024-04-04T17:29:46.1766731Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/actions/setup-dotnet
+2024-04-04T17:29:46.2232734Z ##[endgroup]
+2024-04-04T17:29:46.2233291Z ##[group]Disabling automatic garbage collection
+2024-04-04T17:29:46.2239949Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+2024-04-04T17:29:46.2450457Z ##[endgroup]
+2024-04-04T17:29:46.2450927Z ##[group]Setting up auth
+2024-04-04T17:29:46.2461754Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2024-04-04T17:29:46.2672613Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2024-04-04T17:29:48.0427659Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2024-04-04T17:29:48.0650020Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2024-04-04T17:29:48.4334038Z [command]"C:\Program Files\Git\bin\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+2024-04-04T17:29:48.4552334Z ##[endgroup]
+2024-04-04T17:29:48.4552985Z ##[group]Fetching the repository
+2024-04-04T17:29:48.4565938Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +011531100006b2a5eded8b12f7430fc449d35d25:refs/remotes/pull/520/merge
+2024-04-04T17:29:50.4085314Z remote: Enumerating objects: 158, done.        
+2024-04-04T17:29:50.4087640Z remote: Counting objects:   0% (1/158)        
+2024-04-04T17:29:50.4088492Z remote: Counting objects:   1% (2/158)        
+2024-04-04T17:29:50.4089382Z remote: Counting objects:   2% (4/158)        
+2024-04-04T17:29:50.4090200Z remote: Counting objects:   3% (5/158)        
+2024-04-04T17:29:50.4093301Z remote: Counting objects:   4% (7/158)        
+2024-04-04T17:29:50.4094190Z remote: Counting objects:   5% (8/158)        
+2024-04-04T17:29:50.4095104Z remote: Counting objects:   6% (10/158)        
+2024-04-04T17:29:50.4095993Z remote: Counting objects:   7% (12/158)        
+2024-04-04T17:29:50.4096704Z remote: Counting objects:   8% (13/158)        
+2024-04-04T17:29:50.4097388Z remote: Counting objects:   9% (15/158)        
+2024-04-04T17:29:50.4098489Z remote: Counting objects:  10% (16/158)        
+2024-04-04T17:29:50.4099006Z remote: Counting objects:  11% (18/158)        
+2024-04-04T17:29:50.4099392Z remote: Counting objects:  12% (19/158)        
+2024-04-04T17:29:50.4099844Z remote: Counting objects:  13% (21/158)        
+2024-04-04T17:29:50.4100549Z remote: Counting objects:  14% (23/158)        
+2024-04-04T17:29:50.4101178Z remote: Counting objects:  15% (24/158)        
+2024-04-04T17:29:50.4101878Z remote: Counting objects:  16% (26/158)        
+2024-04-04T17:29:50.4102575Z remote: Counting objects:  17% (27/158)        
+2024-04-04T17:29:50.4103263Z remote: Counting objects:  18% (29/158)        
+2024-04-04T17:29:50.4103955Z remote: Counting objects:  19% (31/158)        
+2024-04-04T17:29:50.4104628Z remote: Counting objects:  20% (32/158)        
+2024-04-04T17:29:50.4105323Z remote: Counting objects:  21% (34/158)        
+2024-04-04T17:29:50.4105993Z remote: Counting objects:  22% (35/158)        
+2024-04-04T17:29:50.4106661Z remote: Counting objects:  23% (37/158)        
+2024-04-04T17:29:50.4107450Z remote: Counting objects:  24% (38/158)        
+2024-04-04T17:29:50.4108191Z remote: Counting objects:  25% (40/158)        
+2024-04-04T17:29:50.4108909Z remote: Counting objects:  26% (42/158)        
+2024-04-04T17:29:50.4109589Z remote: Counting objects:  27% (43/158)        
+2024-04-04T17:29:50.4110258Z remote: Counting objects:  28% (45/158)        
+2024-04-04T17:29:50.4110941Z remote: Counting objects:  29% (46/158)        
+2024-04-04T17:29:50.4111597Z remote: Counting objects:  30% (48/158)        
+2024-04-04T17:29:50.4113422Z remote: Counting objects:  31% (49/158)        
+2024-04-04T17:29:50.4114117Z remote: Counting objects:  32% (51/158)        
+2024-04-04T17:29:50.4114806Z remote: Counting objects:  33% (53/158)        
+2024-04-04T17:29:50.4115477Z remote: Counting objects:  34% (54/158)        
+2024-04-04T17:29:50.4116133Z remote: Counting objects:  35% (56/158)        
+2024-04-04T17:29:50.4116818Z remote: Counting objects:  36% (57/158)        
+2024-04-04T17:29:50.4117526Z remote: Counting objects:  37% (59/158)        
+2024-04-04T17:29:50.4118204Z remote: Counting objects:  38% (61/158)        
+2024-04-04T17:29:50.4118880Z remote: Counting objects:  39% (62/158)        
+2024-04-04T17:29:50.4119551Z remote: Counting objects:  40% (64/158)        
+2024-04-04T17:29:50.4120206Z remote: Counting objects:  41% (65/158)        
+2024-04-04T17:29:50.4120885Z remote: Counting objects:  42% (67/158)        
+2024-04-04T17:29:50.4121569Z remote: Counting objects:  43% (68/158)        
+2024-04-04T17:29:50.4122264Z remote: Counting objects:  44% (70/158)        
+2024-04-04T17:29:50.4122983Z remote: Counting objects:  45% (72/158)        
+2024-04-04T17:29:50.4123682Z remote: Counting objects:  46% (73/158)        
+2024-04-04T17:29:50.4124373Z remote: Counting objects:  47% (75/158)        
+2024-04-04T17:29:50.4125041Z remote: Counting objects:  48% (76/158)        
+2024-04-04T17:29:50.4125717Z remote: Counting objects:  49% (78/158)        
+2024-04-04T17:29:50.4126372Z remote: Counting objects:  50% (79/158)        
+2024-04-04T17:29:50.4127018Z remote: Counting objects:  51% (81/158)        
+2024-04-04T17:29:50.4127676Z remote: Counting objects:  52% (83/158)        
+2024-04-04T17:29:50.4128348Z remote: Counting objects:  53% (84/158)        
+2024-04-04T17:29:50.4128999Z remote: Counting objects:  54% (86/158)        
+2024-04-04T17:29:50.4129663Z remote: Counting objects:  55% (87/158)        
+2024-04-04T17:29:50.4130325Z remote: Counting objects:  56% (89/158)        
+2024-04-04T17:29:50.4131841Z remote: Counting objects:  57% (91/158)        
+2024-04-04T17:29:50.4132573Z remote: Counting objects:  58% (92/158)        
+2024-04-04T17:29:50.4133237Z remote: Counting objects:  59% (94/158)        
+2024-04-04T17:29:50.4133906Z remote: Counting objects:  60% (95/158)        
+2024-04-04T17:29:50.4134571Z remote: Counting objects:  61% (97/158)        
+2024-04-04T17:29:50.4135261Z remote: Counting objects:  62% (98/158)        
+2024-04-04T17:29:50.4136000Z remote: Counting objects:  63% (100/158)        
+2024-04-04T17:29:50.4136741Z remote: Counting objects:  64% (102/158)        
+2024-04-04T17:29:50.4137477Z remote: Counting objects:  65% (103/158)        
+2024-04-04T17:29:50.4138214Z remote: Counting objects:  66% (105/158)        
+2024-04-04T17:29:50.4138908Z remote: Counting objects:  67% (106/158)        
+2024-04-04T17:29:50.4139645Z remote: Counting objects:  68% (108/158)        
+2024-04-04T17:29:50.4140376Z remote: Counting objects:  69% (110/158)        
+2024-04-04T17:29:50.4141092Z remote: Counting objects:  70% (111/158)        
+2024-04-04T17:29:50.4141837Z remote: Counting objects:  71% (113/158)        
+2024-04-04T17:29:50.4142570Z remote: Counting objects:  72% (114/158)        
+2024-04-04T17:29:50.4143307Z remote: Counting objects:  73% (116/158)        
+2024-04-04T17:29:50.4144005Z remote: Counting objects:  74% (117/158)        
+2024-04-04T17:29:50.4144686Z remote: Counting objects:  75% (119/158)        
+2024-04-04T17:29:50.4145398Z remote: Counting objects:  76% (121/158)        
+2024-04-04T17:29:50.4146539Z remote: Counting objects:  77% (122/158)        
+2024-04-04T17:29:50.4147126Z remote: Counting objects:  78% (124/158)        
+2024-04-04T17:29:50.4147689Z remote: Counting objects:  79% (125/158)        
+2024-04-04T17:29:50.4148076Z remote: Counting objects:  80% (127/158)        
+2024-04-04T17:29:50.4148463Z remote: Counting objects:  81% (128/158)        
+2024-04-04T17:29:50.4148843Z remote: Counting objects:  82% (130/158)        
+2024-04-04T17:29:50.4149388Z remote: Counting objects:  83% (132/158)        
+2024-04-04T17:29:50.4149762Z remote: Counting objects:  84% (133/158)        
+2024-04-04T17:29:50.4150139Z remote: Counting objects:  85% (135/158)        
+2024-04-04T17:29:50.4150501Z remote: Counting objects:  86% (136/158)        
+2024-04-04T17:29:50.4150873Z remote: Counting objects:  87% (138/158)        
+2024-04-04T17:29:50.4151581Z remote: Counting objects:  88% (140/158)        
+2024-04-04T17:29:50.4151963Z remote: Counting objects:  89% (141/158)        
+2024-04-04T17:29:50.4152441Z remote: Counting objects:  90% (143/158)        
+2024-04-04T17:29:50.4153019Z remote: Counting objects:  91% (144/158)        
+2024-04-04T17:29:50.4153649Z remote: Counting objects:  92% (146/158)        
+2024-04-04T17:29:50.4154153Z remote: Counting objects:  93% (147/158)        
+2024-04-04T17:29:50.4154556Z remote: Counting objects:  94% (149/158)        
+2024-04-04T17:29:50.4154995Z remote: Counting objects:  95% (151/158)        
+2024-04-04T17:29:50.4155442Z remote: Counting objects:  96% (152/158)        
+2024-04-04T17:29:50.4155844Z remote: Counting objects:  97% (154/158)        
+2024-04-04T17:29:50.4156290Z remote: Counting objects:  98% (155/158)        
+2024-04-04T17:29:50.4156742Z remote: Counting objects:  99% (157/158)        
+2024-04-04T17:29:50.4157157Z remote: Counting objects: 100% (158/158)        
+2024-04-04T17:29:50.4157633Z remote: Counting objects: 100% (158/158), done.        
+2024-04-04T17:29:50.4158129Z remote: Compressing objects:   0% (1/109)        
+2024-04-04T17:29:50.4158595Z remote: Compressing objects:   1% (2/109)        
+2024-04-04T17:29:50.4159390Z remote: Compressing objects:   2% (3/109)        
+2024-04-04T17:29:50.4160124Z remote: Compressing objects:   3% (4/109)        
+2024-04-04T17:29:50.4160725Z remote: Compressing objects:   4% (5/109)        
+2024-04-04T17:29:50.4161375Z remote: Compressing objects:   5% (6/109)        
+2024-04-04T17:29:50.4161829Z remote: Compressing objects:   6% (7/109)        
+2024-04-04T17:29:50.4162461Z remote: Compressing objects:   7% (8/109)        
+2024-04-04T17:29:50.4162893Z remote: Compressing objects:   8% (9/109)        
+2024-04-04T17:29:50.4163352Z remote: Compressing objects:   9% (10/109)        
+2024-04-04T17:29:50.4163842Z remote: Compressing objects:  10% (11/109)        
+2024-04-04T17:29:50.4164301Z remote: Compressing objects:  11% (12/109)        
+2024-04-04T17:29:50.4164779Z remote: Compressing objects:  12% (14/109)        
+2024-04-04T17:29:50.4165255Z remote: Compressing objects:  13% (15/109)        
+2024-04-04T17:29:50.4166038Z remote: Compressing objects:  14% (16/109)        
+2024-04-04T17:29:50.4166544Z remote: Compressing objects:  15% (17/109)        
+2024-04-04T17:29:50.4167857Z remote: Compressing objects:  16% (18/109)        
+2024-04-04T17:29:50.4168714Z remote: Compressing objects:  17% (19/109)        
+2024-04-04T17:29:50.4169569Z remote: Compressing objects:  18% (20/109)        
+2024-04-04T17:29:50.4170468Z remote: Compressing objects:  19% (21/109)        
+2024-04-04T17:29:50.4171327Z remote: Compressing objects:  20% (22/109)        
+2024-04-04T17:29:50.4172123Z remote: Compressing objects:  21% (23/109)        
+2024-04-04T17:29:50.4172940Z remote: Compressing objects:  22% (24/109)        
+2024-04-04T17:29:50.4173735Z remote: Compressing objects:  23% (26/109)        
+2024-04-04T17:29:50.4174533Z remote: Compressing objects:  24% (27/109)        
+2024-04-04T17:29:50.4175384Z remote: Compressing objects:  25% (28/109)        
+2024-04-04T17:29:50.4176220Z remote: Compressing objects:  26% (29/109)        
+2024-04-04T17:29:50.4177005Z remote: Compressing objects:  27% (30/109)        
+2024-04-04T17:29:50.4177821Z remote: Compressing objects:  28% (31/109)        
+2024-04-04T17:29:50.4178622Z remote: Compressing objects:  29% (32/109)        
+2024-04-04T17:29:50.4179431Z remote: Compressing objects:  30% (33/109)        
+2024-04-04T17:29:50.4180674Z remote: Compressing objects:  31% (34/109)        
+2024-04-04T17:29:50.4181524Z remote: Compressing objects:  32% (35/109)        
+2024-04-04T17:29:50.4182526Z remote: Compressing objects:  33% (36/109)        
+2024-04-04T17:29:50.4183320Z remote: Compressing objects:  34% (38/109)        
+2024-04-04T17:29:50.4184140Z remote: Compressing objects:  35% (39/109)        
+2024-04-04T17:29:50.4184984Z remote: Compressing objects:  36% (40/109)        
+2024-04-04T17:29:50.4185766Z remote: Compressing objects:  37% (41/109)        
+2024-04-04T17:29:50.4186564Z remote: Compressing objects:  38% (42/109)        
+2024-04-04T17:29:50.4187397Z remote: Compressing objects:  39% (43/109)        
+2024-04-04T17:29:50.4188715Z remote: Compressing objects:  40% (44/109)        
+2024-04-04T17:29:50.4189330Z remote: Compressing objects:  41% (45/109)        
+2024-04-04T17:29:50.4189810Z remote: Compressing objects:  42% (46/109)        
+2024-04-04T17:29:50.4190268Z remote: Compressing objects:  43% (47/109)        
+2024-04-04T17:29:50.4190730Z remote: Compressing objects:  44% (48/109)        
+2024-04-04T17:29:50.4191218Z remote: Compressing objects:  45% (50/109)        
+2024-04-04T17:29:50.4191666Z remote: Compressing objects:  46% (51/109)        
+2024-04-04T17:29:50.4192136Z remote: Compressing objects:  47% (52/109)        
+2024-04-04T17:29:50.4192596Z remote: Compressing objects:  48% (53/109)        
+2024-04-04T17:29:50.4193064Z remote: Compressing objects:  49% (54/109)        
+2024-04-04T17:29:50.4193492Z remote: Compressing objects:  50% (55/109)        
+2024-04-04T17:29:50.4193943Z remote: Compressing objects:  51% (56/109)        
+2024-04-04T17:29:50.4194402Z remote: Compressing objects:  52% (57/109)        
+2024-04-04T17:29:50.4194827Z remote: Compressing objects:  53% (58/109)        
+2024-04-04T17:29:50.4195277Z remote: Compressing objects:  54% (59/109)        
+2024-04-04T17:29:50.4195736Z remote: Compressing objects:  55% (60/109)        
+2024-04-04T17:29:50.4196158Z remote: Compressing objects:  56% (62/109)        
+2024-04-04T17:29:50.4196762Z remote: Compressing objects:  57% (63/109)        
+2024-04-04T17:29:50.4197240Z remote: Compressing objects:  58% (64/109)        
+2024-04-04T17:29:50.4197664Z remote: Compressing objects:  59% (65/109)        
+2024-04-04T17:29:50.4198114Z remote: Compressing objects:  60% (66/109)        
+2024-04-04T17:29:50.4198573Z remote: Compressing objects:  61% (67/109)        
+2024-04-04T17:29:50.4198992Z remote: Compressing objects:  62% (68/109)        
+2024-04-04T17:29:50.4199436Z remote: Compressing objects:  63% (69/109)        
+2024-04-04T17:29:50.4199896Z remote: Compressing objects:  64% (70/109)        
+2024-04-04T17:29:50.4200334Z remote: Compressing objects:  65% (71/109)        
+2024-04-04T17:29:50.4200795Z remote: Compressing objects:  66% (72/109)        
+2024-04-04T17:29:50.4201264Z remote: Compressing objects:  67% (74/109)        
+2024-04-04T17:29:50.4201732Z remote: Compressing objects:  68% (75/109)        
+2024-04-04T17:29:50.4202165Z remote: Compressing objects:  69% (76/109)        
+2024-04-04T17:29:50.4202636Z remote: Compressing objects:  70% (77/109)        
+2024-04-04T17:29:50.4203093Z remote: Compressing objects:  71% (78/109)        
+2024-04-04T17:29:50.4203526Z remote: Compressing objects:  72% (79/109)        
+2024-04-04T17:29:50.4203985Z remote: Compressing objects:  73% (80/109)        
+2024-04-04T17:29:50.4204435Z remote: Compressing objects:  74% (81/109)        
+2024-04-04T17:29:50.4204857Z remote: Compressing objects:  75% (82/109)        
+2024-04-04T17:29:50.4205313Z remote: Compressing objects:  76% (83/109)        
+2024-04-04T17:29:50.4205762Z remote: Compressing objects:  77% (84/109)        
+2024-04-04T17:29:50.4206182Z remote: Compressing objects:  78% (86/109)        
+2024-04-04T17:29:50.4206647Z remote: Compressing objects:  79% (87/109)        
+2024-04-04T17:29:50.4207113Z remote: Compressing objects:  80% (88/109)        
+2024-04-04T17:29:50.4207543Z remote: Compressing objects:  81% (89/109)        
+2024-04-04T17:29:50.4208029Z remote: Compressing objects:  82% (90/109)        
+2024-04-04T17:29:50.4209147Z remote: Compressing objects:  83% (91/109)        
+2024-04-04T17:29:50.4209638Z remote: Compressing objects:  84% (92/109)        
+2024-04-04T17:29:50.4210063Z remote: Compressing objects:  85% (93/109)        
+2024-04-04T17:29:50.4210514Z remote: Compressing objects:  86% (94/109)        
+2024-04-04T17:29:50.4210974Z remote: Compressing objects:  87% (95/109)        
+2024-04-04T17:29:50.4211399Z remote: Compressing objects:  88% (96/109)        
+2024-04-04T17:29:50.4211844Z remote: Compressing objects:  89% (98/109)        
+2024-04-04T17:29:50.4212310Z remote: Compressing objects:  90% (99/109)        
+2024-04-04T17:29:50.4212766Z remote: Compressing objects:  91% (100/109)        
+2024-04-04T17:29:50.4213238Z remote: Compressing objects:  92% (101/109)        
+2024-04-04T17:29:50.4213688Z remote: Compressing objects:  93% (102/109)        
+2024-04-04T17:29:50.4214150Z remote: Compressing objects:  94% (103/109)        
+2024-04-04T17:29:50.4214612Z remote: Compressing objects:  95% (104/109)        
+2024-04-04T17:29:50.4215059Z remote: Compressing objects:  96% (105/109)        
+2024-04-04T17:29:50.4215517Z remote: Compressing objects:  97% (106/109)        
+2024-04-04T17:29:50.4215972Z remote: Compressing objects:  98% (107/109)        
+2024-04-04T17:29:50.4216404Z remote: Compressing objects:  99% (108/109)        
+2024-04-04T17:29:50.4216856Z remote: Compressing objects: 100% (109/109)        
+2024-04-04T17:29:50.4217351Z remote: Compressing objects: 100% (109/109), done.        
+2024-04-04T17:29:50.5295923Z Receiving objects:   0% (1/158)
+2024-04-04T17:29:50.5296890Z Receiving objects:   1% (2/158)
+2024-04-04T17:29:50.5298519Z Receiving objects:   2% (4/158)
+2024-04-04T17:29:50.5299064Z Receiving objects:   3% (5/158)
+2024-04-04T17:29:50.5299639Z Receiving objects:   4% (7/158)
+2024-04-04T17:29:50.5300029Z Receiving objects:   5% (8/158)
+2024-04-04T17:29:50.5300468Z Receiving objects:   6% (10/158)
+2024-04-04T17:29:50.5302368Z Receiving objects:   7% (12/158)
+2024-04-04T17:29:50.5303155Z Receiving objects:   8% (13/158)
+2024-04-04T17:29:50.5304790Z Receiving objects:   9% (15/158)
+2024-04-04T17:29:50.5305690Z Receiving objects:  10% (16/158)
+2024-04-04T17:29:50.5306611Z Receiving objects:  11% (18/158)
+2024-04-04T17:29:50.5307321Z Receiving objects:  12% (19/158)
+2024-04-04T17:29:50.5308274Z Receiving objects:  13% (21/158)
+2024-04-04T17:29:50.5309033Z Receiving objects:  14% (23/158)
+2024-04-04T17:29:50.5309874Z Receiving objects:  15% (24/158)
+2024-04-04T17:29:50.5310674Z Receiving objects:  16% (26/158)
+2024-04-04T17:29:50.5311300Z Receiving objects:  17% (27/158)
+2024-04-04T17:29:50.5312202Z Receiving objects:  18% (29/158)
+2024-04-04T17:29:50.5313542Z Receiving objects:  19% (31/158)
+2024-04-04T17:29:50.5314235Z Receiving objects:  20% (32/158)
+2024-04-04T17:29:50.5315037Z Receiving objects:  21% (34/158)
+2024-04-04T17:29:50.5315741Z Receiving objects:  22% (35/158)
+2024-04-04T17:29:50.5316398Z Receiving objects:  23% (37/158)
+2024-04-04T17:29:50.5317333Z Receiving objects:  24% (38/158)
+2024-04-04T17:29:50.5318056Z Receiving objects:  25% (40/158)
+2024-04-04T17:29:50.5318687Z Receiving objects:  26% (42/158)
+2024-04-04T17:29:50.5319276Z Receiving objects:  27% (43/158)
+2024-04-04T17:29:50.5319876Z Receiving objects:  28% (45/158)
+2024-04-04T17:29:50.5320836Z Receiving objects:  29% (46/158)
+2024-04-04T17:29:50.5321432Z Receiving objects:  30% (48/158)
+2024-04-04T17:29:50.5322312Z Receiving objects:  31% (49/158)
+2024-04-04T17:29:50.5322800Z Receiving objects:  32% (51/158)
+2024-04-04T17:29:50.5323174Z Receiving objects:  33% (53/158)
+2024-04-04T17:29:50.5323539Z Receiving objects:  34% (54/158)
+2024-04-04T17:29:50.5323896Z Receiving objects:  35% (56/158)
+2024-04-04T17:29:50.5324228Z Receiving objects:  36% (57/158)
+2024-04-04T17:29:50.5324578Z Receiving objects:  37% (59/158)
+2024-04-04T17:29:50.5324917Z Receiving objects:  38% (61/158)
+2024-04-04T17:29:50.5407093Z Receiving objects:  39% (62/158)
+2024-04-04T17:29:50.5408201Z Receiving objects:  40% (64/158)
+2024-04-04T17:29:50.5408559Z Receiving objects:  41% (65/158)
+2024-04-04T17:29:50.5408855Z Receiving objects:  42% (67/158)
+2024-04-04T17:29:50.5409148Z Receiving objects:  43% (68/158)
+2024-04-04T17:29:50.5409435Z Receiving objects:  44% (70/158)
+2024-04-04T17:29:50.5409708Z Receiving objects:  45% (72/158)
+2024-04-04T17:29:50.5409991Z Receiving objects:  46% (73/158)
+2024-04-04T17:29:50.5410267Z Receiving objects:  47% (75/158)
+2024-04-04T17:29:50.5410535Z Receiving objects:  48% (76/158)
+2024-04-04T17:29:50.5410801Z Receiving objects:  49% (78/158)
+2024-04-04T17:29:50.5411070Z Receiving objects:  50% (79/158)
+2024-04-04T17:29:50.5411334Z Receiving objects:  51% (81/158)
+2024-04-04T17:29:50.5411602Z Receiving objects:  52% (83/158)
+2024-04-04T17:29:50.5411871Z Receiving objects:  53% (84/158)
+2024-04-04T17:29:50.5412131Z Receiving objects:  54% (86/158)
+2024-04-04T17:29:50.5412503Z Receiving objects:  55% (87/158)
+2024-04-04T17:29:50.5412868Z Receiving objects:  56% (89/158)
+2024-04-04T17:29:50.5413140Z Receiving objects:  57% (91/158)
+2024-04-04T17:29:50.5413403Z Receiving objects:  58% (92/158)
+2024-04-04T17:29:50.5413665Z Receiving objects:  59% (94/158)
+2024-04-04T17:29:50.5413925Z Receiving objects:  60% (95/158)
+2024-04-04T17:29:50.5414187Z Receiving objects:  61% (97/158)
+2024-04-04T17:29:50.5414447Z Receiving objects:  62% (98/158)
+2024-04-04T17:29:50.5414711Z Receiving objects:  63% (100/158)
+2024-04-04T17:29:50.5414990Z Receiving objects:  64% (102/158)
+2024-04-04T17:29:50.5415254Z Receiving objects:  65% (103/158)
+2024-04-04T17:29:50.5415512Z Receiving objects:  66% (105/158)
+2024-04-04T17:29:50.5415785Z Receiving objects:  67% (106/158)
+2024-04-04T17:29:50.5416052Z Receiving objects:  68% (108/158)
+2024-04-04T17:29:50.5416314Z Receiving objects:  69% (110/158)
+2024-04-04T17:29:50.5416594Z Receiving objects:  70% (111/158)
+2024-04-04T17:29:50.5416869Z Receiving objects:  71% (113/158)
+2024-04-04T17:29:50.5417762Z Receiving objects:  72% (114/158)
+2024-04-04T17:29:50.5418095Z Receiving objects:  73% (116/158)
+2024-04-04T17:29:50.5418387Z Receiving objects:  74% (117/158)
+2024-04-04T17:29:50.5418661Z Receiving objects:  75% (119/158)
+2024-04-04T17:29:50.5418942Z Receiving objects:  76% (121/158)
+2024-04-04T17:29:50.5419214Z Receiving objects:  77% (122/158)
+2024-04-04T17:29:50.5419478Z Receiving objects:  78% (124/158)
+2024-04-04T17:29:50.5419754Z Receiving objects:  79% (125/158)
+2024-04-04T17:29:50.5420027Z Receiving objects:  80% (127/158)
+2024-04-04T17:29:50.5420295Z Receiving objects:  81% (128/158)
+2024-04-04T17:29:50.5420571Z Receiving objects:  82% (130/158)
+2024-04-04T17:29:50.5420859Z Receiving objects:  83% (132/158)
+2024-04-04T17:29:50.5421297Z Receiving objects:  84% (133/158)
+2024-04-04T17:29:50.5624721Z Receiving objects:  85% (135/158)
+2024-04-04T17:29:50.5627529Z Receiving objects:  86% (136/158)
+2024-04-04T17:29:50.5628096Z Receiving objects:  87% (138/158)
+2024-04-04T17:29:50.5628462Z Receiving objects:  88% (140/158)
+2024-04-04T17:29:50.5629928Z Receiving objects:  89% (141/158)
+2024-04-04T17:29:50.5637043Z Receiving objects:  90% (143/158)
+2024-04-04T17:29:50.5642493Z Receiving objects:  91% (144/158)
+2024-04-04T17:29:50.5657552Z Receiving objects:  92% (146/158)
+2024-04-04T17:29:50.5658453Z Receiving objects:  93% (147/158)
+2024-04-04T17:29:50.5660602Z Receiving objects:  94% (149/158)
+2024-04-04T17:29:50.5663179Z Receiving objects:  95% (151/158)
+2024-04-04T17:29:50.5666206Z Receiving objects:  96% (152/158)
+2024-04-04T17:29:50.5668383Z remote: Total 158 (delta 67), reused 101 (delta 41), pack-reused 0        
+2024-04-04T17:29:50.5669299Z Receiving objects:  97% (154/158)
+2024-04-04T17:29:50.5669849Z Receiving objects:  98% (155/158)
+2024-04-04T17:29:50.5672069Z Receiving objects:  99% (157/158)
+2024-04-04T17:29:50.5678398Z Receiving objects: 100% (158/158)
+2024-04-04T17:29:50.5680706Z Receiving objects: 100% (158/158), 880.37 KiB | 8.89 MiB/s, done.
+2024-04-04T17:29:50.5683190Z Resolving deltas:   0% (0/67)
+2024-04-04T17:29:50.5690821Z Resolving deltas:   1% (1/67)
+2024-04-04T17:29:50.5696270Z Resolving deltas:   2% (2/67)
+2024-04-04T17:29:50.5700893Z Resolving deltas:   4% (3/67)
+2024-04-04T17:29:50.5701327Z Resolving deltas:   5% (4/67)
+2024-04-04T17:29:50.5701631Z Resolving deltas:   7% (5/67)
+2024-04-04T17:29:50.5701918Z Resolving deltas:  10% (7/67)
+2024-04-04T17:29:50.5702186Z Resolving deltas:  11% (8/67)
+2024-04-04T17:29:50.5702454Z Resolving deltas:  14% (10/67)
+2024-04-04T17:29:50.5702725Z Resolving deltas:  16% (11/67)
+2024-04-04T17:29:50.5702989Z Resolving deltas:  17% (12/67)
+2024-04-04T17:29:50.5703261Z Resolving deltas:  19% (13/67)
+2024-04-04T17:29:50.5703534Z Resolving deltas:  20% (14/67)
+2024-04-04T17:29:50.5703804Z Resolving deltas:  22% (15/67)
+2024-04-04T17:29:50.5704075Z Resolving deltas:  23% (16/67)
+2024-04-04T17:29:50.5704345Z Resolving deltas:  25% (17/67)
+2024-04-04T17:29:50.5704605Z Resolving deltas:  26% (18/67)
+2024-04-04T17:29:50.5704883Z Resolving deltas:  28% (19/67)
+2024-04-04T17:29:50.5705762Z Resolving deltas:  29% (20/67)
+2024-04-04T17:29:50.5706413Z Resolving deltas:  31% (21/67)
+2024-04-04T17:29:50.5706697Z Resolving deltas:  34% (23/67)
+2024-04-04T17:29:50.5706965Z Resolving deltas:  35% (24/67)
+2024-04-04T17:29:50.5707221Z Resolving deltas:  37% (25/67)
+2024-04-04T17:29:50.5707488Z Resolving deltas:  38% (26/67)
+2024-04-04T17:29:50.5707756Z Resolving deltas:  40% (27/67)
+2024-04-04T17:29:50.5708144Z Resolving deltas:  41% (28/67)
+2024-04-04T17:29:50.5708410Z Resolving deltas:  43% (29/67)
+2024-04-04T17:29:50.5708678Z Resolving deltas:  44% (30/67)
+2024-04-04T17:29:50.5708938Z Resolving deltas:  46% (31/67)
+2024-04-04T17:29:50.5709201Z Resolving deltas:  49% (33/67)
+2024-04-04T17:29:50.5709467Z Resolving deltas:  50% (34/67)
+2024-04-04T17:29:50.5709720Z Resolving deltas:  52% (35/67)
+2024-04-04T17:29:50.5710056Z Resolving deltas:  53% (36/67)
+2024-04-04T17:29:50.5710796Z Resolving deltas:  55% (37/67)
+2024-04-04T17:29:50.5711625Z Resolving deltas:  56% (38/67)
+2024-04-04T17:29:50.5712418Z Resolving deltas:  58% (39/67)
+2024-04-04T17:29:50.5712714Z Resolving deltas:  59% (40/67)
+2024-04-04T17:29:50.5712983Z Resolving deltas:  61% (41/67)
+2024-04-04T17:29:50.5713254Z Resolving deltas:  64% (43/67)
+2024-04-04T17:29:50.5713522Z Resolving deltas:  65% (44/67)
+2024-04-04T17:29:50.5713781Z Resolving deltas:  67% (45/67)
+2024-04-04T17:29:50.5714048Z Resolving deltas:  68% (46/67)
+2024-04-04T17:29:50.5714312Z Resolving deltas:  70% (47/67)
+2024-04-04T17:29:50.5714564Z Resolving deltas:  71% (48/67)
+2024-04-04T17:29:50.5714831Z Resolving deltas:  73% (49/67)
+2024-04-04T17:29:50.5715093Z Resolving deltas:  74% (50/67)
+2024-04-04T17:29:50.5715344Z Resolving deltas:  76% (51/67)
+2024-04-04T17:29:50.5715611Z Resolving deltas:  77% (52/67)
+2024-04-04T17:29:50.5715876Z Resolving deltas:  79% (53/67)
+2024-04-04T17:29:50.5716130Z Resolving deltas:  80% (54/67)
+2024-04-04T17:29:50.5716394Z Resolving deltas:  82% (55/67)
+2024-04-04T17:29:50.5716667Z Resolving deltas:  83% (56/67)
+2024-04-04T17:29:50.5716919Z Resolving deltas:  85% (57/67)
+2024-04-04T17:29:50.5717183Z Resolving deltas:  86% (58/67)
+2024-04-04T17:29:50.5717442Z Resolving deltas:  88% (59/67)
+2024-04-04T17:29:50.5717694Z Resolving deltas:  89% (60/67)
+2024-04-04T17:29:50.5717955Z Resolving deltas:  91% (61/67)
+2024-04-04T17:29:50.5718215Z Resolving deltas:  92% (62/67)
+2024-04-04T17:29:50.5718469Z Resolving deltas:  94% (63/67)
+2024-04-04T17:29:50.5718727Z Resolving deltas:  95% (64/67)
+2024-04-04T17:29:50.5718987Z Resolving deltas:  97% (65/67)
+2024-04-04T17:29:50.5991064Z Resolving deltas:  98% (66/67)
+2024-04-04T17:29:50.5992603Z Resolving deltas: 100% (67/67)
+2024-04-04T17:29:50.5992966Z Resolving deltas: 100% (67/67), done.
+2024-04-04T17:29:50.6622535Z From https://github.com/actions/setup-dotnet
+2024-04-04T17:29:50.6623388Z  * [new ref]         011531100006b2a5eded8b12f7430fc449d35d25 -> pull/520/merge
+2024-04-04T17:29:50.6748656Z ##[endgroup]
+2024-04-04T17:29:50.6749291Z ##[group]Determining the checkout info
+2024-04-04T17:29:50.6751513Z ##[endgroup]
+2024-04-04T17:29:50.6752304Z ##[group]Checking out the ref
+2024-04-04T17:29:50.6760049Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force refs/remotes/pull/520/merge
+2024-04-04T17:29:50.7624010Z Note: switching to 'refs/remotes/pull/520/merge'.
+2024-04-04T17:29:50.7624815Z 
+2024-04-04T17:29:50.7625709Z You are in 'detached HEAD' state. You can look around, make experimental
+2024-04-04T17:29:50.7626917Z changes and commit them, and you can discard any commits you make in this
+2024-04-04T17:29:50.7628078Z state without impacting any branches by switching back to a branch.
+2024-04-04T17:29:50.7628756Z 
+2024-04-04T17:29:50.7629217Z If you want to create a new branch to retain commits you create, you may
+2024-04-04T17:29:50.7630527Z do so (now or later) by using -c with the switch command. Example:
+2024-04-04T17:29:50.7631193Z 
+2024-04-04T17:29:50.7631527Z   git switch -c <new-branch-name>
+2024-04-04T17:29:50.7631937Z 
+2024-04-04T17:29:50.7632129Z Or undo this operation with:
+2024-04-04T17:29:50.7632487Z 
+2024-04-04T17:29:50.7632631Z   git switch -
+2024-04-04T17:29:50.7632879Z 
+2024-04-04T17:29:50.7633374Z Turn off this advice by setting config variable advice.detachedHead to false
+2024-04-04T17:29:50.7634124Z 
+2024-04-04T17:29:50.7634922Z HEAD is now at 0115311 Merge a15a77592bfb7930ea2098ea5cda31bb77386039 into 5d1464d5da459f3d7085106d52e499f4dc5d0f59
+2024-04-04T17:29:50.7653535Z ##[endgroup]
+2024-04-04T17:29:50.8001492Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format='%H'
+2024-04-04T17:29:50.8191888Z '011531100006b2a5eded8b12f7430fc449d35d25'
+2024-04-04T17:29:50.8677227Z ##[group]Run __tests__/clear-toolcache.ps1 Windows
+2024-04-04T17:29:50.8677843Z [36;1m__tests__/clear-toolcache.ps1 Windows[0m
+2024-04-04T17:29:50.8734953Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2024-04-04T17:29:50.8735415Z ##[endgroup]
+2024-04-04T17:29:51.9573822Z Move C:\Program Files\dotnet path
+2024-04-04T17:34:40.2571735Z ##[group]Run ./
+2024-04-04T17:34:40.2572122Z with:
+2024-04-04T17:34:40.2572395Z   dotnet-version: 3.1.100-preview1-014459
+2024-04-04T17:34:40.2572779Z   cache: false
+2024-04-04T17:34:40.2573051Z ##[endgroup]
+2024-04-04T17:34:41.1059455Z [command]"C:\Program Files\PowerShell\7\pwsh.exe" -NoLogo -Sta -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -Command & 'D:\a\setup-dotnet\setup-dotnet\externals\install-dotnet.ps1' -SkipNonVersionedFiles -Runtime dotnet -Channel LTS
+2024-04-04T17:34:44.4633115Z dotnet-install: Remote file https://dotnetcli.azureedge.net/dotnet/Runtime/8.0.3/dotnet-runtime-8.0.3-win-x64.zip size is 33110638 bytes.
+2024-04-04T17:34:44.4666764Z dotnet-install: Downloaded file https://dotnetcli.azureedge.net/dotnet/Runtime/8.0.3/dotnet-runtime-8.0.3-win-x64.zip size is 33110638 bytes.
+2024-04-04T17:34:44.4697411Z dotnet-install: The remote and local file sizes are equal.
+2024-04-04T17:34:44.4721918Z dotnet-install: Extracting the archive.
+2024-04-04T17:34:45.3590649Z dotnet-install: Note that the script does not resolve dependencies during installation.
+2024-04-04T17:34:45.3595895Z dotnet-install: To check the list of dependencies, go to https://learn.microsoft.com/dotnet/core/install/windows#dependencies
+2024-04-04T17:34:45.3602435Z dotnet-install: Installed version is 8.0.3
+2024-04-04T17:34:45.3608434Z dotnet-install: Installation finished
+2024-04-04T17:34:45.5019991Z [command]"C:\Program Files\PowerShell\7\pwsh.exe" -NoLogo -Sta -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -Command & 'D:\a\setup-dotnet\setup-dotnet\externals\install-dotnet.ps1' -SkipNonVersionedFiles -Version 3.1.100-preview1-014459
+2024-04-04T17:34:55.0614342Z dotnet-install: Remote file https://dotnetcli.azureedge.net/dotnet/Sdk/3.1.100-preview1-014459/dotnet-sdk-3.1.100-preview1-014459-win-x64.zip size is 161547775 bytes.
+2024-04-04T17:34:55.0654280Z dotnet-install: Downloaded file https://dotnetcli.azureedge.net/dotnet/Sdk/3.1.100-preview1-014459/dotnet-sdk-3.1.100-preview1-014459-win-x64.zip size is 161547775 bytes.
+2024-04-04T17:34:55.0680000Z dotnet-install: The remote and local file sizes are equal.
+2024-04-04T17:34:55.0701407Z dotnet-install: Extracting the archive.
+2024-04-04T17:35:08.2469572Z dotnet-install: Note that the script does not resolve dependencies during installation.
+2024-04-04T17:35:08.2473481Z dotnet-install: To check the list of dependencies, go to https://learn.microsoft.com/dotnet/core/install/windows#dependencies
+2024-04-04T17:35:08.2478368Z dotnet-install: Installed version is 3.1.100-preview1-014459
+2024-04-04T17:35:08.2483782Z dotnet-install: Installation finished
+2024-04-04T17:35:08.3255636Z ##[group]Run __tests__/verify-dotnet.ps1 -Patterns "3.1.100-preview1-014459"
+2024-04-04T17:35:08.3256407Z [36;1m__tests__/verify-dotnet.ps1 -Patterns "3.1.100-preview1-014459"[0m
+2024-04-04T17:35:08.3290216Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2024-04-04T17:35:08.3290728Z env:
+2024-04-04T17:35:08.3291015Z   DOTNET_ROOT: C:\Program Files\dotnet
+2024-04-04T17:35:08.3291392Z ##[endgroup]
+2024-04-04T17:35:08.6111524Z These patterns were supplied to the script: 3.1.100-preview1-014459.
+2024-04-04T17:35:08.6434949Z Found: 'C:\Program Files\dotnet\dotnet.exe'
+2024-04-04T17:35:08.6678146Z Found installed versions: 3.1.100-preview1-014459.
+2024-04-04T17:35:08.6873395Z Changing directory to the ./__tests__/e2e-test-csproj
+2024-04-04T17:35:08.6893715Z Creating temporary global.json file for 3.1.100-preview1-014459 .NET version.
+2024-04-04T17:35:10.3701785Z The global.json file for the version 3.1.100-preview1-014459 is created. Currently used .NET version is: 3.1.100-preview1-014459.
+2024-04-04T17:35:10.3824878Z Setting the TEST_TARGET_FRAMEWORK environment variable to netcoreapp3.1
+2024-04-04T17:35:10.3849182Z Building test C# project with 3.1.100-preview1-014459 .NET version.
+2024-04-04T17:35:10.6125978Z Microsoft (R) Build Engine version 16.4.0-preview-19502-03+3af680463 for .NET Core
+2024-04-04T17:35:10.6127761Z Copyright (C) Microsoft Corporation. All rights reserved.
+2024-04-04T17:35:10.6128586Z 
+2024-04-04T17:35:44.8119749Z   Restore completed in 32.89 sec for D:\a\setup-dotnet\setup-dotnet\__tests__\e2e-test-csproj\test.csproj.
+2024-04-04T17:35:44.8829577Z   You are using a preview version of .NET Core. See: https://aka.ms/dotnet-core-preview
+2024-04-04T17:35:45.7872735Z   test -> D:\a\setup-dotnet\setup-dotnet\__tests__\e2e-test-csproj\bin\Debug\netcoreapp3.1\test.dll
+2024-04-04T17:35:45.8024293Z 
+2024-04-04T17:35:45.8024741Z Build succeeded.
+2024-04-04T17:35:45.8025290Z     0 Warning(s)
+2024-04-04T17:35:45.8025746Z     0 Error(s)
+2024-04-04T17:35:45.8026863Z 
+2024-04-04T17:35:45.8027193Z Time Elapsed 00:00:35.12
+2024-04-04T17:35:45.8271859Z Testing compiled C# project with 3.1.100-preview1-014459 .NET version.
+2024-04-04T17:35:46.2473351Z Test run for D:\a\setup-dotnet\setup-dotnet\__tests__\e2e-test-csproj\bin\Debug\netcoreapp3.1\test.dll(.NETCoreApp,Version=v3.1)
+2024-04-04T17:35:46.3077253Z Microsoft (R) Test Execution Command Line Tool Version 16.3.0
+2024-04-04T17:35:46.3078216Z Copyright (c) Microsoft Corporation.  All rights reserved.
+2024-04-04T17:35:46.3078580Z 
+2024-04-04T17:35:46.3636363Z Starting test execution, please wait...
+2024-04-04T17:35:46.3955947Z 
+2024-04-04T17:35:46.3956552Z A total of 1 test files matched the specified pattern.
+2024-04-04T17:35:46.9504118Z 
+2024-04-04T17:35:46.9509407Z Test Run Successful.
+2024-04-04T17:35:46.9509947Z Total tests: 1
+2024-04-04T17:35:46.9510355Z      Passed: 1
+2024-04-04T17:35:46.9512896Z  Total time: 0.5549 Seconds
+2024-04-04T17:35:46.9821567Z Tests are completed successfully!
+2024-04-04T17:35:46.9827349Z Removing temporary global.json file.
+2024-04-04T17:35:47.0231642Z Post job cleanup.
+2024-04-04T17:35:47.2407190Z Post job cleanup.
+2024-04-04T17:35:47.4287967Z [command]"C:\Program Files\Git\bin\git.exe" version
+2024-04-04T17:35:47.4579664Z git version 2.44.0.windows.1
+2024-04-04T17:35:47.4647985Z Temporarily overriding HOME='D:\a\_temp\2d99761e-0e0a-4534-b946-6157b2919d3f' before making global git config changes
+2024-04-04T17:35:47.4649834Z Adding repository directory to the temporary git global config as a safe directory
+2024-04-04T17:35:47.4659187Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\setup-dotnet\setup-dotnet
+2024-04-04T17:35:47.4906387Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2024-04-04T17:35:47.5123742Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2024-04-04T17:35:47.8791669Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2024-04-04T17:35:47.8980536Z http.https://github.com/.extraheader
+2024-04-04T17:35:47.9009497Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all http.https://github.com/.extraheader
+2024-04-04T17:35:47.9223887Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2024-04-04T17:35:48.3149506Z Cleaning up orphan processes
+2024-04-04T17:35:48.3443149Z Terminate orphan process: pid (4848) (dotnet)
+2024-04-04T17:35:48.3531826Z Terminate orphan process: pid (5032) (conhost)
